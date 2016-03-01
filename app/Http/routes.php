@@ -11,9 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/destinations/populate', [
+    'as' => 'showPopulateForm', 'uses' => 'DestinationController@showPopulateForm'
+]);
+
+Route::post('/destinations/populate', [
+    'as' => 'populateDestination', 'uses' => 'DestinationController@populateDestination'
+]);
+
+Route::get('/', function() {
+    return redirect()->route('showPopulateForm');
 });
+
+//function () {
+//    return view('destinations.populate');
+//});
+//
+//Route::post('/destinations/populate', function () {
+//    return view('destinations.result', ['resultDestination']);
+//});
 
 /*
 |--------------------------------------------------------------------------
