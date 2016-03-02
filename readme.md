@@ -81,3 +81,12 @@ At least **cid** and **aid** have to be selected, otherwise display an error mes
 ## Useful Resources
 - [Laravel Documentation](https://laravel.com/docs)
 - [PHPUnit Manual](https://phpunit.de/manual/current/en/)
+
+##### App Structure
+- Routes are located in ``app/Http/routes.php``
+- Controllers are located under ``app/Http/Controllers/``
+- Views are located under ``resources/views``
+- Tests are located under ``tests``
+- Services are located under ``app/Services``
+- Repositories are located under ``app/Repositories``
+- The main IoC registrations are located in ``app/Providers\AppServiceProvider.php``
