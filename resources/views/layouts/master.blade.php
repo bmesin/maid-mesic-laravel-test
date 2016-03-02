@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>PHP Technical Test - @yield('title')</title>
+    <title>Destination Resolver - @yield('title')</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -21,7 +21,7 @@
 
 <div class="container">
     <div class="header clearfix">
-        <h3 class="text-muted">PHP Technical Test</h3>
+        <h3 class="text-muted">Destination Resolver</h3>
     </div>
 
     <div class="content">

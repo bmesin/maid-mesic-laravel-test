@@ -7,5 +7,5 @@
         {{ $resultDestination }}
     </div>
 
-    <a href="{{ route('showPopulateForm') }}" class="btn btn-default">Back to Form</a>
+    <a href="{{ route('showResolveForm') }}" class="btn btn-default">Back to Form</a>
 @endsection
