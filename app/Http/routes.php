@@ -19,8 +19,18 @@ Route::post('/destinations/resolve', [
     'as' => 'resolveDestination', 'uses' => 'DestinationController@resolveDestination'
 ]);
 
+Route::get('/readme', [
+    'as' => 'readme',
+    function () {
+        $parsedown = new Parsedown();
+        return view('layouts.readme', [
+            'content' => $parsedown->text(file_get_contents(base_path('readme.md')))
+        ]);
+    }
+]);
+
 Route::get('/', function() {
-    return redirect()->route('showResolveForm');
+    return redirect()->route('readme');
 });
 
 //function () {

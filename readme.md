@@ -43,8 +43,10 @@ The available tokens are:
 
 ---
 ## How to Run the App
+- Install composer packages: ``php composer.phar install``
 - Simply use the following Artisan command to use PHP's built in server: ``php artisan serve``
-- The app will be accessible at <http://localhost:8000>
+- The readme will be accessible at <http://localhost:8000/readme>
+- The app will be accessible at <http://localhost:8000/destinations/resolve>
 
 ---
 ## Tasks
