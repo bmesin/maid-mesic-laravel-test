@@ -21,6 +21,7 @@ The available tokens are:
 - {rand} - A random integer
 - {date} - The current date (format: 2016-02-29)
 
+---
 ## Example
 ##### Campaign JSON:
 ```
@@ -40,10 +41,12 @@ The available tokens are:
 ##### Result Destination URL:
 ``http://m.ar.mundome.com/wap/938/?af_e_offer=1001374&af_code=6854764&af_e=702005&af_e_sid=hello-there&date=2016-03-02``
 
+---
 ## How to Run the App
 - Simply use the following Artisan command to use PHP's built in server: ``php artisan serve``
 - The app will be accessible at <http://localhost:8000>
 
+---
 ## Tasks
 ##### 1. Populate campaigns and affiliates select options from JSON data
 File paths:
@@ -72,6 +75,7 @@ Please unit test this service using phpunit:
 ##### Bonus Task: Add Validation
 At least **cid** and **aid** have to be selected, otherwise display an error message.
 
+---
 ## Useful Resources
 - [Laravel Documentation](https://laravel.com/docs)
 - [PHPUnit Manual](https://phpunit.de/manual/current/en/)
