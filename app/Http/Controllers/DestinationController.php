@@ -1,16 +1,26 @@
 <?php namespace App\Http\Controllers;
 
+use App\Services\Destination\ResolveDestination;
+
 class DestinationController extends Controller
 {
-    public function showPopulateForm()
+    public function showResolveForm()
     {
-        return view('destinations.populate');
+        // TODO: Populate from json resource
+        $campaigns = [];
+        $affiliates = [];
+
+        return view('destinations.resolve.form', [
+            'campaigns' => $campaigns,
+            'affiliates' => $affiliates,
+        ]);
     }
 
-    public function populateDestination()
+    public function resolveDestination()
     {
-        // TODO: Validation & PopulateDestination service
-        $resultDestination = 'TODO';
+        // TODO: Validation & ResolveDestination service
+        $resultDestination = new ResolveDestination()->resolve();
+
         return view('destinations.result', ['resultDestination' => $resultDestination]);
     }
 }

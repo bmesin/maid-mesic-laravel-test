@@ -11,16 +11,16 @@
 |
 */
 
-Route::get('/destinations/populate', [
-    'as' => 'showPopulateForm', 'uses' => 'DestinationController@showPopulateForm'
+Route::get('/destinations/resolve', [
+    'as' => 'showResolveForm', 'uses' => 'DestinationController@showResolveForm'
 ]);
 
-Route::post('/destinations/populate', [
-    'as' => 'populateDestination', 'uses' => 'DestinationController@populateDestination'
+Route::post('/destinations/resolve', [
+    'as' => 'resolveDestination', 'uses' => 'DestinationController@resolveDestination'
 ]);
 
 Route::get('/', function() {
-    return redirect()->route('showPopulateForm');
+    return redirect()->route('showResolveForm');
 });
 
 //function () {
