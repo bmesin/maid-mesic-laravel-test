@@ -7,12 +7,19 @@
         <div class="panel panel-default">
             <div class="panel-heading">Input Parameters</div>
             <div class="panel-body">
+                @if($inputError)
+                <div class="row">
+                    <div class="col-md-12 alert alert-danger">
+                        Campaign and affiliate have to be selected!
+                    </div>
+                </div>
+                @endif
                 <div class="form-group">
                     <label for="cid">Campaign ID</label>
                     <select class="form-control" id="cid" name="cid">
                         <option value="">- Select -</option>
                         @foreach($campaigns as $campaign)
-                            <option value="{{$campaign->id}}">{{$campaign->id}}: {{$campaign->title}}</option>
+                            <option value="{{$campaign['id']}}">{{$campaign['id']}}: {{$campaign['title']}}</option>
                         @endforeach
                     </select>
                 </div>
@@ -21,7 +28,7 @@
                     <select class="form-control" id="aid" name="aid">
                         <option value="">- Select -</option>
                         @foreach($affiliates as $affiliate)
-                            <option value="{{$affiliate->id}}">{{$affiliate->id}}: {{$affiliate->name}}</option>
+                            <option value="{{$affiliate['id']}}">{{$affiliate['id']}}: {{$affiliate['name']}}</option>
                         @endforeach
                     </select>
                 </div>
